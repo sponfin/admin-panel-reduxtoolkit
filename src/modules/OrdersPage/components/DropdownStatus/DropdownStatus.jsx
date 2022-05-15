@@ -1,9 +1,9 @@
-import cn from "classnames";
-import { Input, Dropdown, ControlLabel, Checkbox } from "common/components";
+import cn from 'classnames';
+import { Input, Dropdown, ControlLabel, Checkbox } from 'common/components';
 
-import { useState } from "react";
+import { useState } from 'react';
 
-import styles from "./DropdownStatus.module.css";
+import styles from './DropdownStatus.module.css';
 
 export const DropdownStatus = ({
   className,
@@ -36,8 +36,7 @@ export const DropdownStatus = ({
                 <Checkbox
                   onChange={onChangeStatus}
                   value="Новый"
-                  checked={filters.statusOrder.includes("Новый")}
-                  hasIcon={true}
+                  checked={filters.statusOrder.includes('Новый')}
                 />
               }
               label="Новый"
@@ -48,8 +47,7 @@ export const DropdownStatus = ({
                 <Checkbox
                   onChange={onChangeStatus}
                   value="Расчет"
-                  checked={filters.statusOrder.includes("Расчет")}
-                  hasIcon={true}
+                  checked={filters.statusOrder.includes('Расчет')}
                 />
               }
               label="Расчет"
@@ -60,8 +58,7 @@ export const DropdownStatus = ({
                 <Checkbox
                   onChange={onChangeStatus}
                   value="Подтержден"
-                  checked={filters.statusOrder.includes("Подтержден")}
-                  hasIcon={true}
+                  checked={filters.statusOrder.includes('Подтержден')}
                 />
               }
               label="Подтвержден"
@@ -72,8 +69,7 @@ export const DropdownStatus = ({
                 <Checkbox
                   onChange={onChangeStatus}
                   value="Отложен"
-                  checked={filters.statusOrder.includes("Отложен")}
-                  hasIcon={true}
+                  checked={filters.statusOrder.includes('Отложен')}
                 />
               }
               label="Отложен"
@@ -84,8 +80,7 @@ export const DropdownStatus = ({
                 <Checkbox
                   onChange={onChangeStatus}
                   value="Выполнен"
-                  checked={filters.statusOrder.includes("Выполнен")}
-                  hasIcon={true}
+                  checked={filters.statusOrder.includes('Выполнен')}
                 />
               }
               label="Выполнен"
@@ -96,8 +91,7 @@ export const DropdownStatus = ({
                 <Checkbox
                   onChange={onChangeStatus}
                   value="Отменен"
-                  checked={filters.statusOrder.includes("Отменен")}
-                  hasIcon={true}
+                  checked={filters.statusOrder.includes('Отменен')}
                 />
               }
               label="Отменен"

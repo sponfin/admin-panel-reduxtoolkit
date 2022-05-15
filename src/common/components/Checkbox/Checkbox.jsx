@@ -1,16 +1,16 @@
-import React from "react";
-import cn from "classnames";
+import React from 'react';
+import cn from 'classnames';
 
-import { ReactComponent as IconCheckmark } from "common/icons/checkmark.svg";
+import { ReactComponent as IconCheckmark } from 'common/icons/checkmark.svg';
 
-import styles from "./Checkbox.module.css";
+import styles from './Checkbox.module.css';
 
 export const Checkbox = ({
   className,
   checked = false,
   onChange = () => {},
-  value = "",
-  hasIcon,
+  value = '',
+
   ...props
 }) => {
   const classCheckBox = cn(styles._, className);
@@ -23,7 +23,6 @@ export const Checkbox = ({
         checked={checked}
         onChange={onChange}
         value={value}
-        hasIcon={hasIcon}
         {...props}
       />
 

@@ -1,12 +1,18 @@
-import React from "react";
-import cn from "classnames";
+import React from 'react';
+import cn from 'classnames';
 
-import styles from "./ControlLabel.module.css";
+import styles from './ControlLabel.module.css';
 
-export const ControlLabel = ({ className, control, label, ...props }) => {
+export const ControlLabel = ({
+  className,
+  control,
+  label,
+  noIcon,
+  ...props
+}) => {
   const classControllLabelChecked = cn(styles.label, {
     [styles.labelChecked]: control.props.checked,
-    [styles.labelNoIcon]: !control.props.hasIcon,
+    [styles.labelNoIcon]: noIcon,
   });
 
   return (

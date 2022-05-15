@@ -1,12 +1,12 @@
-import React from "react";
-import cn from "classnames";
+import React from 'react';
+import cn from 'classnames';
 
-import styles from "./Radio.module.css";
+import styles from './Radio.module.css';
 
 export const Radio = ({
   className,
   name,
-  hasIcon = true,
+  hasIcon,
   checked = false,
   onChange = () => {},
   value,
